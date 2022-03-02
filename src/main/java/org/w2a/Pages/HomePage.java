@@ -1,9 +1,7 @@
 package org.w2a.Pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
 import com.w2a.BaseClass.PageClass;
+import org.openqa.selenium.By;
 
 public class HomePage extends PageClass{
 		
@@ -14,8 +12,8 @@ public class HomePage extends PageClass{
 	public LoginPage goToSignin() {
 
 //		driver.findElement(By.cssSelector(".login")).click();
-		click("loginlink_CSS");
-		
+		click("login_link_CSS");
+
 		return new LoginPage();
 		
 	}
