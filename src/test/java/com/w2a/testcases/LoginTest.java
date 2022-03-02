@@ -12,7 +12,8 @@ public class LoginTest extends BaseTest{
 		
 		HomePage hp=new HomePage();
 		LoginPage login = hp.goToSignin();
-		ZohoAppPage zp = login.doLogin("priyanka.vkp@gmail.com", "Meena1783");
+//		ZohoAppPage zp = login.doLogin("priyanka.vkp@gmail.com", "Meena1783");
+		ZohoAppPage zp = login.doLogin("priyanka_vkp@yahoo.com", "Ampa7982");
 	}
 	
 
