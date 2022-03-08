@@ -1,25 +1,17 @@
 package com.w2a.listeners;
 
-import java.io.IOException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
-import javax.mail.MessagingException;
-import javax.mail.internet.AddressException;
-
-import org.testng.ISuite;
-import org.testng.ISuiteListener;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
-import org.testng.Reporter;
-
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.BaseClass.PageClass;
-//import com.w2a.base.Page;
 import com.w2a.utilities.MonitoringMail;
 import com.w2a.utilities.TestConfig;
 import com.w2a.utilities.Utilities;
+import org.testng.*;
+
+import javax.mail.MessagingException;
+import javax.mail.internet.AddressException;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 
 public class CustomListeners extends PageClass implements ITestListener,ISuiteListener {
 
@@ -92,7 +84,7 @@ public class CustomListeners extends PageClass implements ITestListener,ISuiteLi
 		 
 		try {
 			messageBody = "http://" + InetAddress.getLocalHost().getHostAddress()
-					+ ":8080/job/LiveProject%20-%20PageObjectModel/Extent_Report/";
+					+ ":8080/job/PageObjectModelJenkins/htmlreports/Extent_20Report/";
 		} catch (UnknownHostException e) {
 			
 			e.printStackTrace();
